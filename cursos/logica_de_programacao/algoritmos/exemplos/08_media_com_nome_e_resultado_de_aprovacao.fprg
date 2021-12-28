@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-12-24 01:50:29 "/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLVJKMEg3NTI7MjAyMS0xMi0yNDsiMDE6NDM6MzEgIjsyNjEz"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLVJKMEg3NTI7MjAyMS0xMi0yNDsiMDE6NTA6MjkgIjsxOzI3MjY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nome" type="String" array="False" size=""/>
+            <declare name="nota1, nota2, nota3, nota4, media" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o seu nome:&quot;" newline="True"/>
+            <input variable="nome"/>
+            <output expression="&quot;Digite suas notas (uma por uma):&quot;" newline="True"/>
+            <input variable="nota1"/>
+            <input variable="nota2"/>
+            <input variable="nota3"/>
+            <input variable="nota4"/>
+            <assign variable="media" expression="(nota1+nota2+nota3+nota4)/4"/>
+            <if expression="media&gt;=7">
+                <then>
+                    <output expression="&quot;Parab&#233;ns &quot; &amp; nome &amp; &quot;, voc&#234; passou! Sua m&#233;dia foi: &quot; &amp; media" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Infelizmente voc&#234; n&#227;o passou, &quot; &amp; nome &amp; &quot;. Sua m&#233;dia foi: &quot; &amp; media" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

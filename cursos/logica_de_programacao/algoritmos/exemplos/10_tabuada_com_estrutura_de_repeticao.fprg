@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-12-24 01:55:14 "/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLVJKMEg3NTI7MjAyMS0xMi0yNDsiMDE6NDY6MjUgIjsyNjE5"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLVJKMEg3NTI7MjAyMS0xMi0yNDsiMDE6NTU6MTQgIjsxOzI3MjU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero, contador, limite" type="Integer" array="False" size=""/>
+            <assign variable="contador" expression="1"/>
+            <assign variable="limite" expression="10"/>
+            <assign variable="numero" expression="9"/>
+            <while expression="contador&lt;=limite">
+                <output expression="numero &amp; &quot; x &quot; &amp; contador &amp; &quot; = &quot; &amp; numero*contador" newline="True"/>
+                <assign variable="contador" expression="contador+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
